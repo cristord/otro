@@ -13,9 +13,9 @@ $( document ).bind( "pageinit", function() {
 			$("#"+miid).css("background","");
 			miid = this.id;
 			$("#"+miid).css("background","#153F23");
-			$("#principal").fadeOut("slow",function(){ 
+			$("#principal").slideUp(400,function(){ 
 				$("#principal").html($("#div-"+miid).html());
-			}).fadeIn("slow");
+			}).slideDown();
 		}
 	});
 
